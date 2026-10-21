@@ -1,0 +1,111 @@
+/* layout-Header, Footer, Grid systems*/
+/* main */
+.site-header {
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h1 {
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color var(--transition-fast);
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  color: var(--primary-dark);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.main-content {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.featured-products h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 columna en móvil */
+  gap: 2rem;
+}
+
+/*BASE PARA CELULARES (Se aplica por defecto a pantallas pequeñas) */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna para que encaje perfecto en el celular */
+  gap: 1.5rem;
+}
+
+
+
+/* 3. ESCRITORIO / COMPUTADOR (Se activa en pantallas mayores a 1024px) */
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr); /* Se expande a 3 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+  }
+}
+
+
+.site-footer {
+  background-color: var(--text-color);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
