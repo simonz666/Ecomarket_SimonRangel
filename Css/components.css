@@ -51,3 +51,77 @@
   background-color: var(--primary-dark);
   color: var(--white);
 }
+/* contacto*/
+/* Tarjeta principal */
+.contact-form-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.btn-submit {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.info-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.info-highlight {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 0;
+}
