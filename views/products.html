@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-market</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/layout.css">
+    <link rel="stylesheet" href="../Css/components.css">
+
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <h1>EcoMarket</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/views/products.html">Productos</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="search-btn" aria-label="Buscar">Busqueda</a>
+            <a href="#" class="cart-btn" aria-label="Carrito">Carrito</a>
+        </div>
+    </header>   
+    <main class="main-content catalog-layout">
+        <aside class="filters-sidebar">
+            <h3>Filtrar por</h3>
+            
+            <div class="filter-group">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Hogar</a></li>
+                    <li><a href="#">Moda</a></li>
+                    <li><a href="#">Cuidado Personal</a></li>
+                    <li><a href="#">Alimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4>Precio Máximo</h4>
+                <input type="range" min="0" max="100" class="price-range">
+            </div>
+
+            <div class="filter-group">
+                <h4>Disponibilidad</h4>
+                <label><input type="checkbox"> En stock</label>
+            </div>
+        </aside>
+        <section class="catalog-section">
+            <div class="catalog-top-bar">
+                <h2>Nuestro Catálogo</h2>
+                <input type="search" class="catalog-search">
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product1.jpg" alt="Cepillo de bambú">
+                    <h4>Cepillo de Bambú</h4>
+                    <p class="product-price">$15.000</p>
+                    <a href="#" class="btn-details">Ver más</a>
+                </article>
+                <article class="product-card">
+                    <span class="stock-badge">En stock</span>
+                    <img src="../img/products/product2.jpg" alt="Botella reutilizable">
+                    <h4>Botella Térmica Inoxidable</h4>
+                    <p class="product-price">$45.000</p>
+                    <a href="#" class="btn-details">Ver más</a>
+                </article>
+                </div>
+        <nav class="pagination">
+    <a href="#" class="page-link">Anterior</a>
+    <a href="#" class="page-link">1</a>
+    <a href="#" class="page-link">2</a>
+    <a href="#" class="page-link">3</a>
+    <a href="#" class="page-link">Siguiente</a>
+            </nav>
+
+        </section>
+    </main>
+ 
+</body>
+</html>
