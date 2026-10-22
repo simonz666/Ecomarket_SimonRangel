@@ -57,7 +57,7 @@
   text-align: center;
   background-color: #ffffff;
   padding: 3rem 1.5rem;
-  border: 1px solid #e0e0e0;
+  border: 5px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -74,10 +74,11 @@
   margin: 0;
 }
 
+
 .about-block {
   background-color: #ffffff;
   padding: 2rem;
-  border: 1px solid #e0e0e0;
+  border: 5px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
