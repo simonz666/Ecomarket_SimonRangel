@@ -51,3 +51,30 @@
   background-color: var(--primary-dark);
   color: var(--white);
 }
+
+.filter-group input[type="radio"] {
+  display: none;
+}
+
+.filter-label {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.3rem;
+  background-color: #f4f6f8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-group input[type="radio"]:checked + .filter-label {
+  background-color: #2e7d32;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#cat-cuidado:checked ~ .catalog-section .products-grid .product-card:not(.item-cuidado) {
+  display: none;
+}
+
+#cat-hogar:checked ~ .catalog-section .products-grid .product-card:not(.item-hogar) {
+  display: none;
+}
