@@ -105,6 +105,15 @@
   color: var(--white);
   border-color: var(--primary-color);
 }
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* 260px para los filtros, el resto (1fr) para los productos */
+  gap: 2rem;
+  padding: 2rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 @media (min-width: 1024px) {
   .catalog-layout {
