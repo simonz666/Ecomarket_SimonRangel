@@ -1,4 +1,18 @@
 /* components */
+
+.hero-banner-principal {
+  background-image: url('../img/hero/hero.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 600px; 
+  display: flex;
+  justify-content: center; 
+  padding: 3rem;
+  border-radius: var(--border-radius, 8px);
+  margin-bottom: 2rem; 
+}
+
 .product-card {
   background-color: var(--white);
   border-radius: var(--border-radius);
