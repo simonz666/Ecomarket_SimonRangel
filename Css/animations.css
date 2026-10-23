@@ -4,6 +4,18 @@
 }
 
 .btn-submit:hover {
-  background-color: #1b5e20;
+  background-color: var(--primarly-dark);
   transform: translateY(-2px);
+}
+
+.form-input:not(:placeholder-shown),
+.form-textarea:not(:placeholder-shown) {
+  border-color: #d32f2f; /* Rojo */
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1); /* Sutil brillo rojo opcional */
+}
+
+.form-input:focus:valid {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
 }

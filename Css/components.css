@@ -98,19 +98,19 @@
   min-height: 120px;
 }
 .btn-submit {
-  background-color: #2e7d32;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white);
   padding: 0.8rem;
   border-radius: 6px;
   border: none;
 }
 
 .info-card {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 1.5rem;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .info-card h3 {
@@ -122,6 +122,8 @@
 .info-highlight {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2e7d32;
+  color: var(--primary-dark);
   margin: 0;
 }
+
+
