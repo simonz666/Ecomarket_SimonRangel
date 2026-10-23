@@ -47,27 +47,35 @@
   transition: all var(--transition-fast);
 }
 
-.btn-details:hover {
-  background-color: var(--primary-dark);
-  color: var(--white);
-}
 
-.filter-group input[type="radio"] {
+
+/* Ocultar los inputs de radio técnicos */
+.hidden-radio {
   display: none;
 }
 
+
 .filter-label {
   display: block;
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.3rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.4rem;
   background-color: #f4f6f8;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 500;
 }
 
-.filter-group input[type="radio"]:checked + .filter-label {
-  background-color: #2e7d32;
-  color: #ffffff;
+.filter-label:hover {
+  background-color: #e0e0e0;
+}
+
+#cat-todos:checked ~ .filters-sidebar label[for="cat-todos"],
+#cat-cuidado:checked ~ .filters-sidebar label[for="cat-cuidado"],
+#cat-hogar:checked ~ .filters-sidebar label[for="cat-hogar"], 
+#cat-alimento:checked ~ .filters-sidebar label[for="cat-alimento"], 
+#cat-moda:checked ~ .filters-sidebar label[for="cat-moda"] {
+  background-color: var(--primary-dark);
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -76,5 +84,13 @@
 }
 
 #cat-hogar:checked ~ .catalog-section .products-grid .product-card:not(.item-hogar) {
+  display: none;
+}
+
+#cat-alimento:checked ~ .catalog-section .products-grid .product-card:not(.item-alimento) {
+  display: none;
+}
+
+#cat-moda:checked ~ .catalog-section .products-grid .product-card:not(.item-moda) {
   display: none;
 }
