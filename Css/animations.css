@@ -5,3 +5,24 @@
 .filter-label {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+/* animaciones contacto*/
+.btn-submit {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--primarly-dark);
+  transform: translateY(-2px);
+}
+
+.form-input:not(:placeholder-shown),
+.form-textarea:not(:placeholder-shown) {
+  border-color: #d32f2f; /* Rojo */
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1); /* Sutil brillo rojo opcional */
+}
+
+.form-input:focus:valid {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
